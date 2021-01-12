@@ -1,0 +1,27 @@
+step:1
+
+sudo gedit ~/.bashrc
+
+
+step2
+
+alias robomongo='/home/kpndev/robo3t-1.4.2-linux-x86_64-8650949/bin/robo3t
+
+step3
+
+source ~/.bashrc
+
+
+vs code
+
+
+sudo dpkg -i code_1.52.1-1608136922_amd64.deb && sudo apt -f install
+ lzy for lazyscript
+ 
+
+ show connected password
+ 
+ sudo cat /etc/NetworkManager/system-connections/<WiFi_Network_Name>.nmconnection\
+
+ 
+ sudo grep psk= /etc/NetworkManager/system-connections/*
