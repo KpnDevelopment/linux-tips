@@ -38,6 +38,48 @@ prevent overheating
 
 #sudo tlp start    //to start the service
 
+Check CPU temperature in Linux 
+
+$ watch -n 2 sensors
+
+
+enable swapiness
+
+# swapon /dev/sdb6
+
+kill a process
+
+#killall -9 <processname>
+
+list partition
+
+#lsblk
+
+peek cpu
+
+#yes > /dev/null & 
+
+kill all
+
+#killall yes
+
+check memmory status
+
+#free -h
+
+check cpu 
+
+# uptime
+
+tcp connection
+
+#cat /proc/net/tcp | wc -l
+
+kernal
+
+# uname -r
+ 
+
 
  
 
