@@ -78,7 +78,25 @@ tcp connection
 kernal
 
 # uname -r
- 
+
+for full sytem info
+
+#inxi -Fxxxza --no-host
+
+battery status uding tlp
+#sudo tlp-stat --battery 
+
+show ip only
+#"echo $(ifconfig | grep broadcast | awk '{print $2}')"
+
+
+
+manjro clean 
+
+#sudo pacman -Qdt && sudo pacman -R $(pacman -Qdtq) && sudo pacman -Scc
+
+manjaro clean 2
+sudo pacman -Rcs $(pacman -Qdtq)
 
 
  
