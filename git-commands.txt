@@ -1,0 +1,11 @@
+create a sub branch
+
+git checkout -b feature master
+
+
+switch branch 
+
+git switch master
+
+
+
