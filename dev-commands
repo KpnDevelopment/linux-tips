@@ -1,0 +1,35 @@
+nginx start
+
+$ sudo systemctl start nginx  // start
+or
+$ sudo service nginx start
+
+nginx restart
+
+$ sudo systemctl restart nginx #systemd
+OR
+$ sudo service nginx restart   #sysv init
+
+nginx stop
+
+$ sudo systemctl stop nginx #systemd
+OR
+$ sudo service nginx stop   #sysvinit$ sudo systemctl stop nginx #systemd
+OR
+$ sudo service nginx stop   #sysvinit
+
+pm2  
+
+$ pm2 list //list running commands
+
+$ pm2 logs --line 100 // list server logs
+
+$ pm2 start server.js //start a server
+
+mongodb
+
+mongo start
+
+$ sudo systemctl start mongod  
+
+$ sudo systemctl status mongod
