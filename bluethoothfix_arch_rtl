@@ -1,0 +1,7 @@
+$ sudo pacman -S dkms linux-lts-headers
+
+$ pamac build rtl8821ce-dkms-git
+
+$ sudo systemctl restart bluetooth
+
+$ sudo systemctl status bluetooth
