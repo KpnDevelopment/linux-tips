@@ -1,0 +1,27 @@
+
+
+> diskpart
+
+
+>list disk
+
+
+>list partition
+
+
+>select partition <option> (option must be named as sysytem)
+
+
+>assign letter=x
+
+
+>exit (from diskpart)
+
+
+>x: 
+
+
+>dir and cd to efi
+
+
+>rd fedora \s
