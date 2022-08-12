@@ -25,3 +25,8 @@
 
 
 >rd fedora \s
+
+
+ntfs readonly issue fix
+
+sudo ntfsfix /dev/sda2
