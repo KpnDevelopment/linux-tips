@@ -1,0 +1,4 @@
+swap management
+
+https://www.javacodemonk.com/permanent-swap-space-in-centos-and-ubuntu-f36bb1bf
+https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
