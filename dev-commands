@@ -28,6 +28,7 @@ $ pm2 start server.js //start a server
 
 mongodb
 
+
 mongo start
 
 $ sudo systemctl start mongod  
@@ -37,3 +38,7 @@ dual monitor setup modes
 
 $ alias dual="xrandr --output HDMI1 --mode 1920x1080 --rate 120.00 --output eDP1 --mode 1920x1080 --rate 60.00 --right-of HDMI1"
 $ alias mirror="xrandr --output HDMI1 --same-as eDP1"
+
+
+ssh 
+sudo ssh-keygen -R  192.168.1.4
