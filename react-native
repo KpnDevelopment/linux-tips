@@ -1,0 +1,23 @@
+start and run through adb
+
+open one terminal
+$ npx react-native start
+
+
+
+instruction for adb connection
+
+1.connect android phone to pc through usb
+2.enable usb debugging and file transfer mode
+3.check current local ip of your phone
+3.open terminal and enter follwing commands
+
+# For check adb connected or not 
+$ adb devices
+# for tcp port configuration
+$ adb tcpip 5555
+# connect the adb through wireless
+$ adb connect <mobile_ip[192.168.1.X]>
+
+4.open another terminal
+$ npx react-native run-android
