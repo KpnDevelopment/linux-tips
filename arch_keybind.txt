@@ -1,0 +1,13 @@
+
+step 1 :
+  sudo pacman -S xbindkeys
+step 2 :
+  xbindkeys --defaults > ~/.xbindkeysrc
+step 3:
+  nano ~/.xbindkeysrc
+step 4:
+  add this line for corresponding application
+  "command-to-launch-application"
+    Control+Alt+F
+step 5:
+  xbindkeys -p
