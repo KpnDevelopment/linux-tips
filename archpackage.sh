@@ -237,9 +237,8 @@ zsh-autosuggestions
 # update package database and upgrade existing packages
 sudo pacman -Syu
 
-# install packages
-for package in "${packages[@]}"
-do
-    sudo pacman -S "$package"
-done
+# install packages in parallel
+echo "${packages[@]}" | tr ' ' '\n' | parallel --jobs 4 sudo pacman -S {}
+
+
 
