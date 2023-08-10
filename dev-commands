@@ -42,3 +42,14 @@ $ alias mirror="xrandr --output HDMI1 --same-as eDP1"
 
 ssh 
 sudo ssh-keygen -R  192.168.1.4
+#postgresql
+start 
+$ sudo systemctl start postgresql
+
+$psql -U postgres
+ > CREATE DATABASE DB;
+
+#prisma
+$ npx prisma migrate dev --name init
+$ prisma generate
+$ prisma studio
