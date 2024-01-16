@@ -1,0 +1,61 @@
+install docker
+
+sudo pacman -S docker
+
+ sudo usermod -a -G docker $username
+ sudo usermod -aG docker $USER
+
+ install virtmanager
+
+ sudo pacman -S virt-manager qemu vde2 ebtables dnsmasq bridge-utils openbsd-netcat
+
+  sudo systemctl enable libvirtd.service
+
+  sudo systemctl start libvirtd.service
+
+sudo usermod -a -G libvirt $(whoami)
+
+newgrp libvirt
+
+sudo virsh net-info default
+
+sudo virsh net-list --all
+
+sudo virsh net-start default
+docker network inspect
+
+xhost +inet:172.14.0.10 // form ifconfig docker docker0: network 
+
+docker commands 
+
+
+docker images
+
+
+docker system prune --all
+
+docker ps -a
+
+docker start <containerId>
+
+docker volume ls
+
+docker volume rm
+
+docker volume prune
+
+
+
+docker run -it \                                              
+    --network=host \
+    --device /dev/kvm \
+    -p 50922:10022 \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -e "DISPLAY=${DISPLAY:-:0.0}" \
+    -e GENERATE_UNIQUE=true \
+    -e MASTER_PLIST_URL='https://raw.githubusercontent.com/sickcodes/osx-serial-generator/master/config-custom.plist' \
+    -e RAM=8 \
+    -e EXTRA="-smp 8,sockets=1,cores=4,threads=2" \
+    sickcodes/docker-osx:ventura
+
+
