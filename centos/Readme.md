@@ -52,6 +52,13 @@ curl -fsSL https://get.docker.com/ | sh
 
 ```
 
+or
+
+```bash
+sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo &&sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+```
+
 ```bash
 sudo systemctl start docker
 ```
@@ -87,7 +94,7 @@ docker run hello-world
 ## create a docker volume
 
 ```bash
-    mkdir docker volumes
+    mkdir docker_volumes
 ```
 
 ```bash
@@ -102,10 +109,33 @@ docker volume create yacht
 docker run -d -p 8000:8000 -v /var/run/docker.sock:/var/run/docker.sock -v yacht:/config --name yacht selfhostedpro/yacht
 ```
 
+```bash
+    admin@yacht.local
+```
+
+```bash
+    pass
+```
+
 ### Add this selfhost template to your yacht
 
 ```bash
     https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/yacht/Template/template.json
+```
+
+## bash alias
+
+```bash
+ nano ~/.bashrc
+```
+
+```bash
+alias i="sudo dnf install "
+alias b="cd .."
+```
+
+```bash
+    source ~/.bashrc
 ```
 
 ## Instal TigerVNC
