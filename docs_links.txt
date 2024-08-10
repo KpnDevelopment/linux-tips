@@ -2,3 +2,5 @@ swap management
 
 https://www.javacodemonk.com/permanent-swap-space-in-centos-and-ubuntu-f36bb1bf
 https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
+
+https://docs.fedoraproject.org/en-US/quick-docs/set-nvidia-as-primary-gpu-on-optimus-based-laptops/
